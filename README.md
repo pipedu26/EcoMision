@@ -4,10 +4,7 @@
 
 > *(Completar con los nombres reales del equipo)*
 
-- [Nombre 1]
-- [Nombre 2]
-- [Nombre 3]
-
+- Juan Felipe Duran Chaparro
 ---
 
 ## Descripción
