@@ -15,28 +15,6 @@ El proyecto aplica los cuatro pilares de POO: abstracción, encapsulamiento, her
 
 ---
 
-## Cómo compilar y ejecutar
-
-### Requisitos
-- CLion (recomendado) o cualquier compilador con soporte C++17
-- CMake 3.26 o superior
-
-### En CLion
-1. Descomprimir el proyecto
-2. Abrir CLion → `File > Open` → seleccionar la carpeta `EcoMision`
-3. CLion detecta el `CMakeLists.txt` automáticamente
-4. Clic en el botón `Run` (triángulo verde)
-
-### En terminal
-```bash
-cd EcoMision
-mkdir build && cd build
-cmake ..
-make
-./EcoMision
-```
-
----
 
 ## Archivos principales
 
