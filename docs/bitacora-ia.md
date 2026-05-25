@@ -40,12 +40,6 @@ También rechazamos el uso de `override` en las subclases. La IA lo incluía en 
 
 ---
 
-## ¿Qué parte del proyecto debe poder defender cada integrante?
-
-> *(Completar con los nombres reales del equipo)*
-
-| Integrante | Parte que debe defender |
-|---|---|
 | [Nombre 1] | Clase `ElementoInteractivo` y las subclases: por qué es abstracta, qué es polimorfismo, cómo funciona `interactuar()` en cada subclase |
 | [Nombre 2] | Clase `Reserva` y `Zona`: por qué se usó `unordered_map`, cómo funciona la sobrecarga, qué es agregación |
 | [Nombre 3] | Clase `Explorador` y `EcoMision`: cómo se coordina la demostración, qué es asociación, cómo cambia el estado del explorador |
