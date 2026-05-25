@@ -2,8 +2,6 @@
 
 ## Integrantes
 
-> *(Completar con los nombres reales del equipo)*
-
 - Juan Felipe Duran Chaparro
 ---
 
