@@ -4,9 +4,9 @@
 
 Usamos IA principalmente en tres momentos del proyecto:
 
-1. **Para entender el enunciado** al inicio. Teníamos dudas sobre qué significaba "agregación" vs "composición" en el contexto del diagrama UML. Le preguntamos a la IA que nos explicara la diferencia con un ejemplo parecido al proyecto.
+1. **Para entender el enunciado** al inicio. Tenia dudas sobre qué significaba "agregación" vs "composición" en el contexto del diagrama UML. Le preguntamos a la IA que nos explicara la diferencia con un ejemplo parecido al proyecto.
 
-2. **Para revisar el primer diagrama de clases** antes de empezar a codificar. Queríamos saber si las relaciones que habíamos dibujado tenían sentido o si había algo que no cuadraba.
+2. **Para revisar el primer diagrama de clases** antes de empezar a codificar. Queria saber si las relaciones que se habian dibujado tenían sentido o si había algo que no cuadraba.
 
 3. **Para entender errores de compilación** que no sabíamos leer. Especialmente el error que salió cuando intentamos asignar `this->nombre` en el constructor de `AnimalHerido` sin haber llamado al constructor de la clase base.
 
@@ -16,7 +16,7 @@ Usamos IA principalmente en tres momentos del proyecto:
 
 La decisión de cómo guardar los elementos interactivos en `Zona`. Teníamos duda entre usar un `vector<ElementoInteractivo>` (sin puntero) o `vector<ElementoInteractivo*>` (con puntero).
 
-La IA nos explicó que si guardábamos objetos directamente (sin puntero), C++ haría "object slicing" y perdería la parte específica de cada subclase, con lo que el polimorfismo no funcionaría. Eso no lo habíamos visto en clase todavía y no lo entendíamos del todo, pero lo comprobamos haciendo una prueba pequeña y efectivamente sin el puntero todos los elementos se comportaban igual.
+La IA nos explicó que si guardábamos objetos directamente (sin puntero), C++ haría "object slicing" y perdería la parte específica de cada subclase, con lo que el polimorfismo no funcionaría. Pero se comprobo haciendo una prueba pequeña y efectivamente sin el puntero todos los elementos se comportaban igual.
 
 ---
 
@@ -35,7 +35,5 @@ Lo aceptamos porque tenía sentido: todos los elementos comparten ese comportami
 La IA sugirió en un momento usar `PortalDeRuta` con un `codigoDestino` (string) en lugar de `Zona*`, y que el portal buscara la zona en la reserva al momento de interactuar. Para eso el portal necesitaría una referencia a `Reserva`.
 
 Lo rechazamos porque nos pareció innecesariamente complicado para lo que necesitábamos. Si el portal ya sabe a qué zona apunta desde que se crea, guardar `Zona*` directo es más simple y funciona igual. Agregar una dependencia entre `PortalDeRuta` y `Reserva` solo para buscar algo que ya podemos pasar directamente no tenía justificación.
-
-También rechazamos el uso de `override` en las subclases. La IA lo incluía en todas las firmas de los métodos heredados. Investigamos y vimos que `override` es opcional en C++, y como en clase no lo habíamos visto, preferimos no usarlo para no incluir cosas que no sabríamos explicar en la sustentación.
 
 ---
