@@ -39,9 +39,3 @@ Lo rechazamos porque nos pareció innecesariamente complicado para lo que necesi
 También rechazamos el uso de `override` en las subclases. La IA lo incluía en todas las firmas de los métodos heredados. Investigamos y vimos que `override` es opcional en C++, y como en clase no lo habíamos visto, preferimos no usarlo para no incluir cosas que no sabríamos explicar en la sustentación.
 
 ---
-
-| [Nombre 1] | Clase `ElementoInteractivo` y las subclases: por qué es abstracta, qué es polimorfismo, cómo funciona `interactuar()` en cada subclase |
-| [Nombre 2] | Clase `Reserva` y `Zona`: por qué se usó `unordered_map`, cómo funciona la sobrecarga, qué es agregación |
-| [Nombre 3] | Clase `Explorador` y `EcoMision`: cómo se coordina la demostración, qué es asociación, cómo cambia el estado del explorador |
-
-> Nota: independientemente de la división, cada integrante debe poder explicar cualquier parte del código en la sustentación individual.
